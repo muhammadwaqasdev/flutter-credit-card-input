@@ -1,0 +1,21 @@
+name: Publish plugin
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  publishing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout'
+        uses: actions/checkout@v1
+        
+      - name: 'Flutter pub publish'
+        uses: k-paxian/dart-package-publisher@v1.5.1
+        with:
+          credentialJson: ${{ secrets.DART_CREDENTIAL }}
+          flutter: true
+          skipTests: true
+          force: true
+          suppressBuildRunner: true

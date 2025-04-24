@@ -1,0 +1,24 @@
+name: credit_card_input
+description: Flutter Credit/Debit Input Card Input.
+version: 1.0.0
+homepage: https://github.com/muhammadwaqasdev/flutter-credit-card-input
+repository: https://github.com/muhammadwaqasdev/flutter-credit-card-input
+issue_tracker: https://github.com/muhammadwaqasdev/flutter-credit-card-input/issues
+
+environment:
+  sdk: '>=2.18.2 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  card_scanner: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  assets:
+    - images/
