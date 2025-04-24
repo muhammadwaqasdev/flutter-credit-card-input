@@ -44,7 +44,7 @@ class ScannerButton extends StatelessWidget {
       child: scannerIcon ??
           Image.asset(
             'images/scanner.png',
-            package: 'credit_card_form',
+            package: 'credit_card_input',
             width: 30.0,
           ),
     );

@@ -127,7 +127,7 @@ class CardImage {
   Widget render() {
     return Image.asset(
       'images/$img',
-      package: 'credit_card_form',
+      package: 'credit_card_input',
       width: width,
     );
   }

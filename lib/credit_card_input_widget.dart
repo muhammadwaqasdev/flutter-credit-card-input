@@ -168,7 +168,7 @@ class _CreditCardFormState extends State<CreditCardForm> {
                   child: widget.cvcIcon ??
                       Image.asset(
                         'images/cvc.png',
-                        package: 'credit_card_form',
+                        package: 'credit_card_input',
                         height: 25,
                       ),
                 ),

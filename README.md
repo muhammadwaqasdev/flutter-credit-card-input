@@ -15,7 +15,7 @@
 ## Usage
 
 ```dart
-import 'package:credit_card_form/credit_card_input.dart';
+import 'package:credit_card_input/credit_card_input.dart';
 
 ...
 
