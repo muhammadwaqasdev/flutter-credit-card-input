@@ -4,9 +4,6 @@ class CreditCardForm extends StatefulWidget {
   final String? cardNumberLabel;
   final String? cardHolderLabel;
   final bool? hideCardHolder;
-  final bool? enableScanner;
-  final Widget? scannerIcon;
-  final CardScanOptions? scanOptions;
   final String? expiredDateLabel;
   final String? cvcLabel;
   final Widget? cvcIcon;
@@ -25,9 +22,6 @@ class CreditCardForm extends StatefulWidget {
     this.cardNumberLabel,
     this.cardHolderLabel,
     this.hideCardHolder = false,
-    this.enableScanner = false,
-    this.scannerIcon,
-    this.scanOptions,
     this.expiredDateLabel,
     this.cvcLabel,
     this.cvcIcon,
@@ -104,17 +98,6 @@ class _CreditCardFormState extends State<CreditCardForm> {
             CardNumberInputFormatter(),
           ],
           onChanged: noop,
-          suffixIcon: Padding(
-            padding: const EdgeInsets.all(8),
-            child: widget.enableScanner == true && cardType == null
-                ? ScannerButton(
-                    controller: widget.controller,
-                    onChanged: widget.onChanged,
-                    scannerIcon: widget.scannerIcon,
-                    scanOptions: widget.scanOptions,
-                  )
-                : cardImage.render(),
-          ),
         ),
         // [card holder name]
         if (widget.hideCardHolder == false)
